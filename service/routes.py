@@ -53,6 +53,7 @@ def create_accounts():
     location_url = url_for("get_accounts", account_id=account.id, _external=True)
     return make_response(jsonify(message), status.HTTP_201_CREATED, {"Location": location_url})
 
+
 ######################################################################
 # LIST ALL ACCOUNTS
 ######################################################################
